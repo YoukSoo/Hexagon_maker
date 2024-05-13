@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./nav_bar.css">
+  <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+  <header>
+    <nav class="header_nav">
+      <a href="./main.html">
+        <img class="logo_img" src="" alt="">
+      </a>
+      <div class="nav_menu_container">
+        <a class="link_make" href="#">평가만들기</a>
+        <a class="link_login" href="#">로그인</a>  <!--로그인시 none-->
+        <a class="link_register" href="#">회원가입</a>  <!--로그인시 none-->
+        <a class="link_mypage" href="#">마이페이지</a>  <!--로그인시 block-->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form_container">
+      <h1>회원가입</h1>
+      <form class="register_form" action="">
+        <div>
+          아이디
+          <div class="form_id_container">
+            <input class="input_text" id="input_id" type="text" name="userId">
+            <button class="id_duplication_chk_btn" name="duplicationChk">중복확인</button>
+          </div>
+        </div>
+        <hr>
+      
+        <div class="form_password_container">
+          비밀번호
+          <input class="input_text" id="input_password" type="text" name="userPassword">
+          비밀번호 재입력
+          <input class="input_text" type="text" name="Passchk">
+        </div>
+        <hr>
+        <div class="form_email_container">
+          이메일
+          <input class="input_text" type="text" name="userEmail">
+        </div>  
+        <hr>
+        <button class="register_complete_btn">로그인</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
